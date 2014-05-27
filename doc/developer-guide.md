@@ -19,11 +19,15 @@ Getting started
 
 - Download dependencies:
 
-		bower install
+		node_modules/bower/bin/bower install
+
+- add the fix for txt2tags: 
+
+        cp pagedown-ace_Markdown.Converter.js ./public/res/bower-libs/pagedown-ace/Markdown.Converter.js
 
 - Serve **StackEdit** at `http://localhost/`:
 
-		(export PORT=80 && node server.js)
+		(export PORT=3000 && node server.js)
 		
 	> **NOTE:** StackEdit project itself has no back end. It can run on any apache server.
 
